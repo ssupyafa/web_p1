@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="removeDuplicates">Check</button>
+    <p id="test"></p>
+    <script>
+        function removeDuplicates(array) {
+            var newArray = [1,2,3,4,4,1,1,4,5,3];
+            for (var i = 0; i < array.length; i++) {
+                if (newArray.indexOf(array[i]) === -1) {
+                    newArray.push(array[i]);
+               }
+            }
+            document.getElementById("test").innerHTML = newArray;
+  }
+
+
+    </script>
+</body>
+</html>
